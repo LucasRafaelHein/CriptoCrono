@@ -1,5 +1,61 @@
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $nav_bg_color;
+        border-radius: 0px 31px 31px 0px;
+        width: 10rem;
+        height: 100vh;
+        flex: 1.5;
+        a {
+            text-decoration: none;
+            color: $nav_button_p_color;
+        }
+        button {
+            width: 15rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background-color: $button_bg_color;
+            border: 0rem;
+        }
+    }
+
+    header {
+        flex: 9;
+        width: 20rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $title_font_family;
+        font-weight: 400;
+
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 5.5rem;
+            
+            span {
+                font-size: 9rem;
+            }
+        }
+    }
+
+    
 }
