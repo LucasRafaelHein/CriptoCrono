@@ -16,18 +16,22 @@ body {
     nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         background-color: $nav_bg_color;
         border-radius: 0px 31px 31px 0px;
         width: 10rem;
         height: 100vh;
         flex: 1.5;
+
         a {
+            display: flex;
+            font-size: 1.6rem;
+            font-family: $text_font_family;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
             color: $nav_button_p_color;
-        }
-        button {
             width: 15rem;
             height: 3rem;
             border-radius: 0.5rem;
@@ -36,26 +40,37 @@ body {
         }
     }
 
-    header {
+    .content {
         flex: 9;
-        width: 20rem;
-        height: 10rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: $title_font_family;
-        font-weight: 400;
 
-        p {
+        header {
+            width: 100%;
+            height: 10rem;
             display: flex;
             align-items: center;
-            font-size: 5.5rem;
-            
-            span {
-                font-size: 9rem;
+            justify-content: center;
+            font-family: $title_font_family;
+            font-weight: 400;
+    
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 5.5rem;
+                font-weight: 500;
+                
+                span {
+                    font-weight: 500;
+                    font-size: 9rem;
+                }
             }
         }
-    }
-
     
+       main {
+        background-color: $card_bg_color;
+        height: 10rem;
+        width: 10rem;
+        display: block;
+        margin: 100px auto;
+       }
+    }
 }
