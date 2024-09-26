@@ -1,14 +1,17 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 $title_font_family: 'Bai Jamjuree', sans-serif;
 $text_font_family: 'Archivo', sans-serif;
+$card_text_font_family: 'Mulish', sans-serif;
 
 // Colors 
 $title_color: #000;
 $nav_bg_color: #000;
 $nav_button_p_color: #fff;
+$img_card_box_shadow: 5px 5px 5px rgba(0, 0, 0%, 0.2);
 
 $button_bg_color: hsla(0, 0, 85, 50%);
 
