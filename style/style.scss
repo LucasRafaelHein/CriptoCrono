@@ -70,25 +70,23 @@ body {
         }
     
        main {
-            height: 40rem;
-            width: 80%;
+            height: 35rem !important;
+            width: 80%; // Tamanho em REM: 95
             margin: 2rem;
             display: flex;
-            align-items: center;
             justify-content: space-between;
 
             .main_img {
-                width: 30%;
-                height: 100%;
-                background-image: url(/images/David\ Chaum.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
+                width: 30rem;
+                height: inherit;
+                background-image: url(/images/davidchaum.jpg);
                 border-radius: 1.5rem;
+                background-position: center;
                 box-shadow: $img_card_box_shadow;
             }
 
             .main_txt {
-                height: 40rem;
+                height: inherit !important;
                 width: 60rem;
                 background-color: $card_bg_color;
                 border-radius: 1.5rem;
@@ -98,7 +96,13 @@ body {
                 align-items: center;
                 
                 h2 {
-                    font-size: 3rem;
+                    width: 100%;
+                    height: 10rem;
+                    padding-top: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3.5rem;
                     color: $card_title_color;
                     font-family: $title_font_family;
                 }
@@ -108,14 +112,18 @@ body {
                 }
 
                 p {
+                    text-align: center;
                     font-family: $card_text_font_family;
-                    font-size: 4rem;
+                    font-size: 2.2rem !important;
+                    padding-top: 1rem;
+                    width: 58rem;
                 }
             }
         }
+
         footer {
             height: 15%;
-            width: 95%;
+            width: 80%;
             background-color: $footer_bg_color;
             border-radius: 1rem;
         }
