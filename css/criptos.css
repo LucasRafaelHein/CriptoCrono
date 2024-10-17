@@ -73,71 +73,39 @@ body .content header p span {
   font-size: 7rem;
 }
 body .content main {
-  height: 35rem;
+  height: 39rem;
   width: 95rem;
-  margin: 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+  row-gap: 1.8rem;
 }
-body .content main .image .main_img {
-  height: 31rem;
-  width: 30rem;
-  background-image: url(/images/blockchain.png);
-  border-radius: 1.5rem;
-  background-position: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-body .content main .image .saibamais_butao {
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .content main .image .saibamais_butao a {
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+body .content main a {
+  height: 19rem;
+  width: 19rem;
   background-color: #d9d9d9;
-  width: 18rem;
-  height: 3.7rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 1.8rem;
-  transition: box-shadow 0.2s ease;
-}
-body .content main .image .saibamais_butao a:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-body .content main .main_txt {
-  width: 60rem;
-  background-color: #d9d9d9;
-  border-radius: 1.5rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-body .content main .main_txt h2 {
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.5rem;
-  color: #96A100;
-  font-family: "Bai Jamjuree", sans-serif;
-}
-body .content main .main_txt a {
+  justify-content: space-around;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
   color: #000;
+  border-radius: 1rem;
+  transition: transform 0.4s ease;
 }
-body .content main .main_txt p {
-  text-align: justify;
-  font-family: "Mulish", sans-serif;
+body .content main a:hover {
+  transform: scale(1.1, 1.1);
+}
+body .content main a span {
   font-size: 2rem;
-  width: 56rem;
+}
+body .content main a img {
+  width: 15rem;
+  height: 15rem;
 }
 body .content footer {
   height: 15%;
@@ -145,4 +113,4 @@ body .content footer {
   background-color: hsla(0, 0%, 0%, 0.1);
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=seguranca.css.map */
+}/*# sourceMappingURL=criptos.css.map */

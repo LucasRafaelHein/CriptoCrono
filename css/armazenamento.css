@@ -79,36 +79,11 @@ body .content main {
   display: flex;
   justify-content: space-between;
 }
-body .content main .image .main_img {
-  height: 31rem;
+body .content main .main_img {
   width: 30rem;
-  background-image: url(/images/blockchain.png);
+  background-image: url(/images/carteira.png);
   border-radius: 1.5rem;
   background-position: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-body .content main .image .saibamais_butao {
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .content main .image .saibamais_butao a {
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  background-color: #d9d9d9;
-  width: 18rem;
-  height: 3.7rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 1.8rem;
-  transition: box-shadow 0.2s ease;
-}
-body .content main .image .saibamais_butao a:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 body .content main .main_txt {
@@ -136,7 +111,7 @@ body .content main .main_txt a {
 body .content main .main_txt p {
   text-align: justify;
   font-family: "Mulish", sans-serif;
-  font-size: 2rem;
+  font-size: 2.1rem;
   width: 56rem;
 }
 body .content footer {
@@ -145,4 +120,4 @@ body .content footer {
   background-color: hsla(0, 0%, 0%, 0.1);
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=seguranca.css.map */
+}/*# sourceMappingURL=armazenamento.css.map */

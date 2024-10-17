@@ -1,0 +1,130 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $nav_bg_color;
+    border-radius: 0px 31px 31px 0px;
+    width: 10rem;
+    height: 100vh;
+    flex: 1.5;
+
+    a {
+      display: flex;
+      font-size: 1.6rem;
+      font-family: $text_font_family;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $nav_button_p_color;
+      width: 15rem;
+      height: 3.5rem;
+      border-radius: 0.5rem;
+      background-color: $button_bg_color;
+      border: none;
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+
+      &:not(:hover) {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 9;
+
+    header {
+      width: 100%;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $title_font_family;
+      font-weight: 400;
+
+      p {
+        display: flex;
+        align-items: center;
+        font-size: 4.5rem;
+        font-weight: 500;
+
+        span {
+          font-weight: 600;
+          font-size: 7rem;
+        }
+      }
+    }
+
+    main {
+      height: 39rem;
+      width: 95rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 10rem;  
+      row-gap: 1.8rem;
+
+      a {
+        height: 17rem;
+        width: 17rem;
+        background-color: $card_bg_color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: $img_card_box_shadow;
+        font-family: $text_font_family;
+        font-weight: bold;
+        color: $card_p_color;
+        border-radius: 50%;
+        transition: transform .4s ease;
+        padding: 1rem;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        p {
+            font-size: 9rem;
+        }
+
+        span {
+          font-size: 3rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    footer {
+      height: 15%;
+      width: 82%;
+      background-color: $footer_bg_color;
+      border-radius: 1rem;
+      box-shadow: $img_card_box_shadow;
+    }
+  }
+}

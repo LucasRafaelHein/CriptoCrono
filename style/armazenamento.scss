@@ -87,7 +87,7 @@ body {
 
             .main_img {
                 width: 30rem;
-                background-image: url(/images/davidchaum.jpg);
+                background-image: url(/images/carteira.png);
                 border-radius: 1.5rem;
                 background-position: center;
                 box-shadow: $img_card_box_shadow;
@@ -104,12 +104,11 @@ body {
                 
                 h2 {
                     width: 100%;
-                    height: 10rem;
-                    padding-top: 2rem;
+                    height: 6rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 4.5rem;
+                    font-size: 3.5rem;
                     color: $card_title_color;
                     font-family: $title_font_family;
                 }
@@ -121,8 +120,7 @@ body {
                 p {
                     text-align: justify;
                     font-family: $card_text_font_family;
-                    font-size: 2.2rem;
-                    padding-top: 1rem;
+                    font-size: 2.1rem;  
                     width: 56rem;
                 }
             }

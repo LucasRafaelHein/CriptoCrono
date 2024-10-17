@@ -82,7 +82,7 @@ body .content main {
 body .content main .image .main_img {
   height: 31rem;
   width: 30rem;
-  background-image: url(/images/blockchain.png);
+  background-image: url(/images/cadeadoblockchain.png);
   border-radius: 1.5rem;
   background-position: center;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -101,7 +101,7 @@ body .content main .image .saibamais_butao a {
   text-decoration: none;
   background-color: #d9d9d9;
   width: 18rem;
-  height: 3.7rem;
+  height: 3.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
   font-family: "Bai Jamjuree", sans-serif;
@@ -136,7 +136,7 @@ body .content main .main_txt a {
 body .content main .main_txt p {
   text-align: justify;
   font-family: "Mulish", sans-serif;
-  font-size: 2rem;
+  font-size: 1.85rem;
   width: 56rem;
 }
 body .content footer {
@@ -145,4 +145,4 @@ body .content footer {
   background-color: hsla(0, 0%, 0%, 0.1);
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=seguranca.css.map */
+}/*# sourceMappingURL=seguranca2.css.map */
