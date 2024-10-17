@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +38,13 @@ body nav a {
   border-radius: 0.5rem;
   background-color: hsla(0, 0%, 85%, 0.5);
   border: none;
+  transition: transform 0.4s ease;
+}
+body nav a:hover {
+  transform: scale(1.1, 1.1);
+}
+body nav a:not(:hover) {
+  opacity: 0.5;
 }
 body .content {
   display: flex;
@@ -69,34 +73,37 @@ body .content header p span {
   font-size: 7rem;
 }
 body .content main {
-  height: 35rem !important;
-  width: 80%;
+  height: 37rem;
+  width: 95rem;
   margin: 2rem;
   display: flex;
   justify-content: space-between;
 }
 body .content main .main_img {
-  width: 30rem;
-  height: inherit;
-  background-image: url(/images/davidchaum.jpg);
+  position: relative;
+  width: 50rem;
+  background-image: url(/images/unnamed-chunk-3-1-1.png);
   border-radius: 1.5rem;
-  background-position: center;
+  background-size: contain;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
+body .content main .main_img a {
+  position: absolute;
+  inset: 37.5rem 8rem auto auto;
+  font-size: 1.2rem;
+}
 body .content main .main_txt {
-  height: inherit !important;
-  width: 60rem;
+  width: 40rem;
   background-color: #d9d9d9;
   border-radius: 1.5rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2.5rem;
 }
 body .content main .main_txt h2 {
-  width: 100%;
-  height: 10rem;
-  padding-top: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,15 +115,15 @@ body .content main .main_txt a {
   color: #000;
 }
 body .content main .main_txt p {
-  text-align: center;
+  padding-top: 1.8rem;
+  text-align: justify;
   font-family: "Mulish", sans-serif;
-  font-size: 2.2rem !important;
-  padding-top: 1rem;
-  width: 58rem;
+  font-size: 1.7rem;
 }
 body .content footer {
   height: 15%;
-  width: 80%;
+  width: 82%;
   background-color: hsla(0, 0%, 0%, 0.1);
   border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=volatilidade.css.map */

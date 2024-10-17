@@ -37,6 +37,15 @@ body {
             border-radius: 0.5rem;
             background-color: $button_bg_color;
             border: none;
+            transition: transform .4s ease;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+
+            &:not(:hover) {
+                opacity: 0.5;
+            }
         }
     }
 
@@ -70,15 +79,14 @@ body {
         }
     
        main {
-            height: 35rem !important;
-            width: 80%; // Tamanho em REM: 95
+            height: 35rem;
+            width: 95rem; 
             margin: 2rem;
             display: flex;
             justify-content: space-between;
 
             .main_img {
                 width: 30rem;
-                height: inherit;
                 background-image: url(/images/davidchaum.jpg);
                 border-radius: 1.5rem;
                 background-position: center;
@@ -86,7 +94,6 @@ body {
             }
 
             .main_txt {
-                height: inherit !important;
                 width: 60rem;
                 background-color: $card_bg_color;
                 border-radius: 1.5rem;
@@ -102,7 +109,7 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 3.5rem;
+                    font-size: 4.5rem;
                     color: $card_title_color;
                     font-family: $title_font_family;
                 }
@@ -112,20 +119,21 @@ body {
                 }
 
                 p {
-                    text-align: center;
+                    text-align: justify;
                     font-family: $card_text_font_family;
-                    font-size: 2.2rem !important;
+                    font-size: 2.2rem;
                     padding-top: 1rem;
-                    width: 58rem;
+                    width: 56rem;
                 }
             }
         }
 
         footer {
             height: 15%;
-            width: 80%;
+            width: 82%;
             background-color: $footer_bg_color;
             border-radius: 1rem;
+            box-shadow: $img_card_box_shadow;
         }
     }
 }
