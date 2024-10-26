@@ -89,7 +89,7 @@ body .content main .main_img {
 }
 body .content main .main_img a {
   position: absolute;
-  inset: 37.5rem 8rem auto auto;
+  inset: 35.5rem 8rem auto auto;
   font-size: 1.2rem;
 }
 body .content main .main_txt {
@@ -103,7 +103,7 @@ body .content main .main_txt {
   padding: 2.5rem;
 }
 body .content main .main_txt h2 {
-  height: 2rem;
+  height: 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +115,7 @@ body .content main .main_txt a {
   color: #000;
 }
 body .content main .main_txt p {
-  padding-top: 1.8rem;
+  padding-top: 1.6rem;
   text-align: justify;
   font-family: "Mulish", sans-serif;
   font-size: 1.7rem;
