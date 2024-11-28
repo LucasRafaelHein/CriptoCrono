@@ -42,10 +42,6 @@ body {
             &:hover {
                 transform: scale(1.1, 1.1);
             }
-
-            &:not(:hover) {
-                opacity: 0.5;
-            }
         }
     }
 
@@ -58,7 +54,7 @@ body {
 
         header {
             width: 100%;
-            height: 4rem;
+            height: 4rem; 
             display: flex;
             align-items: center;
             justify-content: center;

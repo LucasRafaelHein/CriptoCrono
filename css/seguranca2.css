@@ -25,7 +25,7 @@ body nav {
   height: 100vh;
   flex: 1.5;
 }
-body nav a {
+body nav .botoes {
   display: flex;
   font-size: 1.6rem;
   font-family: "Archivo", sans-serif;
@@ -40,11 +40,8 @@ body nav a {
   border: none;
   transition: transform 0.4s ease;
 }
-body nav a:hover {
+body nav .botoes:hover {
   transform: scale(1.1, 1.1);
-}
-body nav a:not(:hover) {
-  opacity: 0.5;
 }
 body .content {
   display: flex;
@@ -127,7 +124,7 @@ body .content main .main_txt h2 {
   align-items: center;
   justify-content: center;
   font-size: 3.5rem;
-  color: #96A100;
+  color: #a19600;
   font-family: "Bai Jamjuree", sans-serif;
 }
 body .content main .main_txt a {

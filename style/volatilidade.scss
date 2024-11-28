@@ -24,7 +24,7 @@ body {
         height: 100vh;
         flex: 1.5;
 
-        a {
+        .botoes {
             display: flex;
             font-size: 1.6rem;
             font-family: $text_font_family;
@@ -41,10 +41,6 @@ body {
 
             &:hover {
                 transform: scale(1.1, 1.1);
-            }
-
-            &:not(:hover) {
-                opacity: 0.5;
             }
         }
     }

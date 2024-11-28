@@ -21,6 +21,7 @@ body header {
   display: flex;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
+  padding-left: 3rem;
 }
 body header p {
   display: flex;
@@ -44,6 +45,20 @@ body nav a {
   color: black;
   font-size: 2.5rem;
   font-weight: 600;
+  position: relative;
+}
+body nav a:hover:after {
+  width: 100%;
+}
+body nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 5%;
+  background-color: black;
+  transition: width 0.4s ease;
 }
 body main .conteiner {
   display: flex;
@@ -52,7 +67,8 @@ body main .conteiner .texto {
   padding-top: 3rem;
   margin: 3em;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 body main .conteiner .texto h1 {
   font-size: 3.8rem;
@@ -61,12 +77,9 @@ body main .conteiner .texto h1 {
   margin: 3rem;
   width: 65rem;
 }
-body main .conteiner .imagembitcoin {
-  padding-top: 6rem;
-  display: flex;
-  justify-content: end;
-}
-body main .botao {
+body main .conteiner .texto button {
+  margin-left: 3rem;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,10 +87,19 @@ body main .botao {
   height: 5rem;
   border-radius: 5rem;
   background-color: #F9A826;
+  transition: background-color 0.3s ease;
 }
-body main .botao a {
+body main .conteiner .texto button:hover {
+  background-color: #be8324;
+}
+body main .conteiner .texto button a {
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
   font-family: "Archivo", sans-serif;
+}
+body main .conteiner .imagembitcoin {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: end;
 }/*# sourceMappingURL=ladingpage.css.map */

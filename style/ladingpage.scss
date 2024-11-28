@@ -9,13 +9,11 @@
 html {
     font-size: 62.5%;
 }
-
     body {
-
         div {
-            display: flex;
+            display: flex   ;
         }
-
+ 
         header {
             margin: 3rem; 
             height: 100%;
@@ -23,6 +21,7 @@ html {
             display: flex;
             font-family: $title_font_family;
             font-weight: 400;
+            padding-left: 3rem;
     
             p {
                 display: flex;
@@ -43,11 +42,30 @@ html {
             align-items: center;
             gap: 3rem;
             width: 100%;
+
             a {
                 text-decoration: none;
                 color: black;
                 font-size: 2.5rem;
                 font-weight: 600;
+                position: relative;
+
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 5%;
+                    background-color: black;
+                    transition: width .4s ease;
+                }
             }
         }
 
@@ -58,35 +76,45 @@ html {
                     padding-top: 3rem;
                     margin: 3em;
                     display: flex;
-                    justify-content: center;
+                    flex-direction: column;
+                    justify-content: space-around;
+
                     h1 {
                         font-size: 3.8rem;
                         text-align: justify;
                         font-family: $title_font_family;
                         margin: 3rem;
                         width: 65rem;
-    
+                    }
+
+                    button {
+                        margin-left: 3rem;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 15rem;
+                        height: 5rem;
+                        border-radius: 5rem;
+                        background-color: #F9A826;
+                        transition: background-color .3s ease;
+
+                        &:hover {
+                            background-color: #be8324;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: 2.5rem;
+                            color: white;
+                            font-family: $text_font_family;
+                        }
                     }
                 }
                 .imagembitcoin {
                     padding-top: 6rem;
                     display: flex;
                     justify-content: end;
-                }
-            }
-            .botao {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 15rem;
-                height: 5rem;
-                border-radius: 5rem;
-                background-color: #F9A826;
-                a {
-                    text-decoration: none;
-                    font-size: 2.5rem;
-                    color: white;
-                    font-family: $text_font_family;
                 }
             }
         }
