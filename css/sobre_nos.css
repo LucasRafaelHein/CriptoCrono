@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+.imagem_autor {
+  border-radius: 50%;
+  max-width: 17.5rem;
+  max-height: 17.5rem;
+}
+
+main {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  gap: 5rem;
+}
+main .images {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .images .img_wrapper {
+  display: flex;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.8rem;
+  gap: 1.5rem;
+}
+main .images .img_wrapper button {
+  cursor: pointer;
+  border: none;
+  background-color: #a19600;
+  padding: 0.8rem;
+  color: hsl(0, 0%, 95%);
+}
+
+#menu {
+  display: none;
+  background-color: hsla(0, 0%, 85%, 0.5);
+  width: 32rem;
+  height: 36rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+#menu .email, #menu .phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+}
+
+.show {
+  display: block !important;
+}/*# sourceMappingURL=sobre_nos.css.map */

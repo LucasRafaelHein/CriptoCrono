@@ -1,0 +1,60 @@
+@import "variables";
+
+.imagem_autor {
+  border-radius: 50%;
+  max-width: 17.5rem;
+  max-height: 17.5rem;
+}
+
+main {
+  width: fit-content !important;
+  gap: 5rem;
+
+  .images {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .img_wrapper {
+        display: flex;
+        align-items: center;
+        font-family: $text_font_family;
+        font-size: 1.8rem;
+        gap: 1.5rem;
+
+        button {
+          cursor: pointer;
+          border: none;
+          background-color: $card_title_color;
+          padding: .8rem;
+          color: hsl(0, 0%, 95%);
+        }
+    }
+  }
+}
+
+#menu {
+  display: none;
+  background-color: $button_bg_color;
+  width: 32rem;
+  height: 36rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: .7rem;
+  text-align: center;
+  font-family: $card_text_font_family;
+  
+  .email, .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+    height: 50%;
+  }
+}
+
+.show {
+  display: block !important;
+}

@@ -1,53 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/seguranca.css">
-    <link rel="shortcut icon" href="/images/images_icon/icons8-aceito-pelo-bitcoin-color-16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/sobre_nos.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/images_icon/icons8-aceito-pelo-bitcoin-color-16.png"
+      type="image/x-icon"
+    />
+    <script src="/script.js" defer></script>
     <title>CriptoCrono</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Nav da página -->
     <nav>
-        <a class="botoes" href="/pages/home.html">Surgimento</a>
-        <a class="botoes" href="/pages/volatilidade.html">Volatilidade</a>
-        <a class="botoes" href="/pages/seguranca.html">Segurança</a>
-        <a class="botoes" href="/pages/armazenamento.html">Armazenamento</a>
-        <a class="botoes" href="/pages/criptos.html">Criptos</a>
-        <a class="botoes" href="/pages/dicas.html">Dicas</a>
-        <a class="botoes" href="/pages/sobre_nos.html">Sobre nós</a>
-        <div class="img_nav">
-            <a href="/index.html"><img src="/images/criptocrono_image.png" width="125vw" height="125vh"></a>
-        </div>
+      <a class="botoes" href="/pages/home.html">Surgimento</a>
+      <a class="botoes" href="/pages/volatilidade.html">Volatilidade</a>
+      <a class="botoes" href="/pages/seguranca.html">Segurança</a>
+      <a class="botoes" href="/pages/armazenamento.html">Armazenamento</a>
+      <a class="botoes" href="/pages/criptos.html">Criptos</a>
+      <a class="botoes" href="/pages/dicas.html">Dicas</a>
+      <a class="botoes" href="/pages/sobre_nos.html">Sobre nós</a>
+      <div class="img_nav">
+        <a href="/index.html"
+          ><img
+            src="/images/criptocrono_image.png"
+            width="125vw"
+            height="125vh"
+        /></a>
+      </div>
     </nav>
 
     <!-- Content que engloba todo o conteúdo-->
     <div class="content">
-        <header>
-            <p>
-                <span class="title_c">C</span>
-                    RIPTO
-                <span class="title_c">C</span>
-                    RONO
-            </p>
-        </header>
-    
-        <main>
-            <div class="main_img"></div>
-            <div class="main_txt">
-                <h2>
-                    Segurança
-                </h2>
-                <p>
-                    As criptomoedas operam em um livro de registro online chamado blockchain. Nele, as transações são registradas de forma pública e distribuída entre os usuários da moeda, garantindo segurança e transparência. Elas são criadas a partir de um processo chamado mineração, onde problemas matemáticos são resolvidos usando computação para gerar moedas. Você pode comprar, armazenar e gastar essas moedas usando carteiras digitais. Quando você tem uma criptomoeda, você possui uma "senha" digital que permite transferi-la de uma pessoa para outra sem a necessidade de uma pessoa de confiança no meio.
-            </div>
-        </main>
-    
-        <footer></footer>
-    </div>
-</body>
+      <header>
+        <p>
+          <span class="title_c">C</span>
+          RIPTO
+          <span class="title_c">C</span>
+          RONO
+        </p>
+      </header>
 
+      <main>
+        <div class="images">
+          <div class="img_wrapper">
+            <img class="imagem_autor" src="/images/foto_arthur.jpg" />
+            <button onclick="active_autor_menu()">Arthur Gehlen</button>
+          </div>
+
+          <div class="img_wrapper">
+            <img class="imagem_autor" src="/images/foto_lucas.png" />
+            <button onclick="active_autor_menu()">Lucas Rafael Hein</button>
+          </div>
+        </div>
+
+        <div id="menu">
+          <p>
+            <div class="email">
+              <h3>📧 E-mails para contato:</h3> 
+              <p>Lucas Rafael Hein: lucasrafaelhein365@gmail.com </p>
+              <p>Arthur Gehlen: 1arthurgehlen@gmail.com</p>
+            </div>
+            
+            <div class="phone">
+              <h3>📞 Telefones para contato: </h3>
+              <p>Lucas Rafael Hein: +55 45 9986-2489</p>
+              <p>Arthur Gehlen: +55 45 99995-7207</p>
+            </div>
+          </p>
+        </div>
+
+        <div class="main_txt">
+          <h2>Sobre Nós</h2>
+          <p>
+            Somos Lucas Rafael Hein e Arthur Gehlen, estudantes do 1º ano do
+            ensino médio no Instituto Federal do Paraná – Centro de Referências
+            Biopark Toledo. Estamos focados em aproveitar ao máximo nossa
+            formação e usar o que aprendemos para criar projetos práticos e
+            úteis.
+          </p>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
 </html>
